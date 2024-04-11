@@ -1,0 +1,938 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cb500cf0f58e74f9a52a8af931edde, type: 3}
+  m_Name: -tk2d
+  m_EditorClassIdentifier: 
+  version: 4
+  spriteAnimationIndex:
+  - assetGUID: c69b457a9ca9f6940a05dd194958a206
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: 561020e4e25d0d14a9ac3ef076d0e5cb
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  fontIndex: []
+  spriteCollectionIndex:
+  - name: LittleGuyCollection
+    spriteCollectionGUID: 46bc860df70680c4489656060c1487bd
+    spriteCollectionDataGUID: 46bc860df70680c4489656060c1487bd
+    spriteNames:
+    - strange_root_001
+    - little_guy_finditem_left_001
+    - little_guy_finditem_left_002
+    - little_guy_finditem_left_003
+    - little_guy_finditem_left_004
+    - little_guy_finditem_left_005
+    - little_guy_finditem_left_006
+    - little_guy_finditem_left_007
+    - little_guy_finditem_left_008
+    - little_guy_finditem_left_009
+    - little_guy_finditem_left_010
+    - little_guy_finditem_left_011
+    - little_guy_finditem_left_012
+    - little_guy_finditem_left_013
+    - little_guy_finditem_left_014
+    - little_guy_finditem_left_015
+    - little_guy_finditem_left_016
+    - little_guy_finditem_left_017
+    - little_guy_finditem_left_018
+    - little_guy_finditem_left_019
+    - little_guy_finditem_left_020
+    - little_guy_finditem_left_021
+    - little_guy_finditem_left_022
+    - little_guy_finditem_left_023
+    - little_guy_finditem_right_001
+    - little_guy_finditem_right_002
+    - little_guy_finditem_right_003
+    - little_guy_finditem_right_004
+    - little_guy_finditem_right_005
+    - little_guy_finditem_right_006
+    - little_guy_finditem_right_007
+    - little_guy_finditem_right_008
+    - little_guy_finditem_right_009
+    - little_guy_finditem_right_010
+    - little_guy_finditem_right_011
+    - little_guy_finditem_right_012
+    - little_guy_finditem_right_013
+    - little_guy_finditem_right_014
+    - little_guy_finditem_right_015
+    - little_guy_finditem_right_016
+    - little_guy_finditem_right_017
+    - little_guy_finditem_right_018
+    - little_guy_finditem_right_019
+    - little_guy_finditem_right_020
+    - little_guy_finditem_right_021
+    - little_guy_finditem_right_022
+    - little_guy_finditem_right_023
+    - little_guy_idle_left_001
+    - little_guy_idle_left_002
+    - little_guy_idle_left_003
+    - little_guy_idle_left_004
+    - little_guy_idle_left_005
+    - little_guy_idle_left_006
+    - little_guy_idle_right_001
+    - little_guy_idle_right_002
+    - little_guy_idle_right_003
+    - little_guy_idle_right_004
+    - little_guy_idle_right_005
+    - little_guy_idle_right_006
+    - little_guy_move_left_001
+    - little_guy_move_left_002
+    - little_guy_move_left_003
+    - little_guy_move_left_004
+    - little_guy_move_left_005
+    - little_guy_move_left_006
+    - little_guy_move_right_001
+    - little_guy_move_right_002
+    - little_guy_move_right_003
+    - little_guy_move_right_004
+    - little_guy_move_right_005
+    - little_guy_move_right_006
+    - little_guy_sleep_fall_left_001
+    - little_guy_sleep_fall_left_002
+    - little_guy_sleep_fall_left_003
+    - little_guy_sleep_fall_left_004
+    - little_guy_sleep_fall_left_005
+    - little_guy_sleep_fall_left_006
+    - little_guy_sleep_fall_left_007
+    - little_guy_sleep_fall_left_008
+    - little_guy_sleep_fall_left_009
+    - little_guy_sleep_fall_left_010
+    - little_guy_sleep_fall_left_011
+    - little_guy_sleep_fall_right_001
+    - little_guy_sleep_fall_right_002
+    - little_guy_sleep_fall_right_003
+    - little_guy_sleep_fall_right_004
+    - little_guy_sleep_fall_right_005
+    - little_guy_sleep_fall_right_006
+    - little_guy_sleep_fall_right_007
+    - little_guy_sleep_fall_right_008
+    - little_guy_sleep_fall_right_009
+    - little_guy_sleep_fall_right_010
+    - little_guy_sleep_fall_right_011
+    - little_guy_sleep_return_left_001
+    - little_guy_sleep_return_left_002
+    - little_guy_sleep_return_left_003
+    - little_guy_sleep_return_left_004
+    - little_guy_sleep_return_left_005
+    - little_guy_sleep_return_left_006
+    - little_guy_sleep_return_left_007
+    - little_guy_sleep_return_left_008
+    - little_guy_sleep_return_left_009
+    - little_guy_sleep_return_left_010
+    - little_guy_sleep_return_left_011
+    - little_guy_sleep_return_left_012
+    - little_guy_sleep_return_left_013
+    - little_guy_sleep_return_left_014
+    - little_guy_sleep_return_left_015
+    - little_guy_sleep_return_left_016
+    - little_guy_sleep_return_right_001
+    - little_guy_sleep_return_right_002
+    - little_guy_sleep_return_right_003
+    - little_guy_sleep_return_right_004
+    - little_guy_sleep_return_right_005
+    - little_guy_sleep_return_right_006
+    - little_guy_sleep_return_right_007
+    - little_guy_sleep_return_right_008
+    - little_guy_sleep_return_right_009
+    - little_guy_sleep_return_right_010
+    - little_guy_sleep_return_right_011
+    - little_guy_sleep_return_right_012
+    - little_guy_sleep_return_right_013
+    - little_guy_sleep_return_right_014
+    - little_guy_sleep_return_right_015
+    - little_guy_sleep_return_right_016
+    - little_guy_sleep_snore_left_001
+    - little_guy_sleep_snore_left_002
+    - little_guy_sleep_snore_left_003
+    - little_guy_sleep_snore_left_004
+    - little_guy_sleep_snore_left_005
+    - little_guy_sleep_snore_left_006
+    - little_guy_sleep_snore_right_001
+    - little_guy_sleep_snore_right_002
+    - little_guy_sleep_snore_right_003
+    - little_guy_sleep_snore_right_004
+    - little_guy_sleep_snore_right_005
+    - little_guy_sleep_snore_right_006
+    - little_guy_pet_start_left_004
+    - little_guy_pet_start_right_002
+    - little_guy_pet_start_left_003
+    - little_guy_pet_loop_right_002
+    - little_guy_pet_start_left_001
+    - little_guy_pet_start_left_005
+    - little_guy_pet_loop_left_002
+    - little_guy_pet_start_left_006
+    - little_guy_pet_loop_right_001
+    - little_guy_pet_start_left_008
+    - little_guy_pet_start_left_007
+    - little_guy_pet_start_right_001
+    - little_guy_pet_start_right_004
+    - little_guy_pet_start_right_005
+    - little_guy_pet_start_right_007
+    - little_guy_pet_start_right_009
+    - little_guy_pet_start_right_006
+    - little_guy_pet_start_right_008
+    - little_guy_pet_start_left_009
+    - little_guy_pet_start_right_003
+    - little_guy_pet_end_left_001
+    - little_guy_pet_start_left_002
+    - little_guy_pet_end_left_002
+    - little_guy_pet_end_left_003
+    - little_guy_pet_end_right_001
+    - little_guy_pet_end_right_002
+    - little_guy_pet_end_right_003
+    - little_guy_pet_loop_left_001
+    - little_guy_pet_loop_left_003
+    - little_guy_pet_loop_right_004
+    - little_guy_pet_loop_right_003
+    - little_guy_pet_loop_left_004
+    - little_gal_hit_left_002
+    - little_gal_idle_left_001
+    - little_gal_idle_right_004
+    - little_gal_idle_left_006
+    - little_gal_idle_right_001
+    - little_gal_idle_right_002
+    - little_gal_idle_right_003
+    - little_gal_idle_left_004
+    - little_gal_pet_end_left_005
+    - little_gal_pet_end_right_001
+    - little_gal_pet_end_right_003
+    - little_gal_pet_end_right_004
+    - little_gal_move_right_001
+    - little_gal_move_right_002
+    - little_gal_move_right_003
+    - little_gal_move_right_004
+    - little_gal_removehelmet_right_028
+    - little_gal_removehelmet_right_029
+    - little_gal_removehelmet_right_030
+    - little_gal_removehelmet_right_024
+    - little_gal_removehelmet_right_025
+    - little_gal_idle_right_005
+    - little_gal_idle_right_006
+    - little_gal_move_left_005
+    - little_gal_removehelmet_right_017
+    - little_gal_removehelmet_right_018
+    - little_gal_hit_right_002
+    - little_gal_move_left_004
+    - little_gal_move_left_006
+    - little_gal_idle_left_002
+    - little_gal_removehelmet_right_014
+    - little_gal_removehelmet_right_011
+    - little_gal_removehelmet_right_012
+    - little_gal_removehelmet_right_013
+    - little_gal_removehelmet_right_015
+    - little_gal_removehelmet_right_016
+    - little_gal_idle_left_003
+    - little_gal_idle_left_005
+    - little_gal_removehelmet_right_006
+    - little_gal_removehelmet_right_007
+    - little_gal_removehelmet_right_008
+    - little_gal_removehelmet_right_009
+    - little_gal_removehelmet_right_010
+    - little_gal_hit_left_001
+    - little_gal_removehelmet_right_003
+    - little_gal_removehelmet_left_030
+    - little_gal_removehelmet_right_001
+    - little_gal_removehelmet_right_002
+    - little_gal_removehelmet_right_004
+    - little_gal_removehelmet_right_005
+    - little_gal_removehelmet_left_008
+    - little_gal_removehelmet_left_010
+    - little_gal_removehelmet_left_012
+    - little_gal_removehelmet_left_013
+    - little_gal_removehelmet_left_025
+    - little_gal_removehelmet_left_026
+    - little_gal_removehelmet_left_027
+    - little_gal_removehelmet_left_028
+    - little_gal_removehelmet_left_029
+    - little_gal_removehelmet_left_022
+    - little_gal_removehelmet_left_019
+    - little_gal_removehelmet_left_020
+    - little_gal_removehelmet_left_021
+    - little_gal_removehelmet_left_023
+    - little_gal_removehelmet_left_024
+    - little_gal_removehelmet_left_014
+    - little_gal_removehelmet_left_015
+    - little_gal_removehelmet_left_016
+    - little_gal_removehelmet_left_017
+    - little_gal_removehelmet_left_018
+    - little_gal_removehelmet_left_011
+    - little_gal_removehelmet_left_009
+    - little_gal_removehelmet_left_005
+    - little_gal_removehelmet_left_003
+    - little_gal_removehelmet_left_002
+    - little_gal_removehelmet_left_004
+    - little_gal_removehelmet_left_006
+    - little_gal_removehelmet_left_007
+    - little_gal_move_right_005
+    - little_gal_move_right_006
+    - little_gal_pet_end_left_002
+    - little_gal_pet_end_left_003
+    - little_gal_pet_start_right_001
+    - little_gal_pet_start_right_003
+    - little_gal_pet_start_right_004
+    - little_gal_removehelmet_left_001
+    - little_gal_pet_end_left_001
+    - little_gal_pet_start_right_005
+    - little_gal_pet_start_right_002
+    - little_gal_pet_loop_left_003
+    - little_gal_hit_right_001
+    - little_gal_pet_end_left_004
+    - little_gal_pet_start_left_005
+    - little_gal_pet_end_right_005
+    - little_gal_pet_end_right_002
+    - little_gal_pet_loop_left_001
+    - little_gal_pet_loop_left_002
+    - little_gal_pet_loop_left_004
+    - little_gal_pet_loop_right_001
+    - little_gal_pet_loop_right_002
+    - little_gal_move_left_001
+    - little_gal_move_left_003
+    - little_gal_move_left_002
+    - little_gal_pet_loop_right_003
+    - little_gal_pet_loop_right_004
+    - little_gal_pet_start_left_002
+    - little_gal_pet_start_left_003
+    - little_gal_pet_start_left_004
+    - little_gal_pet_start_left_001
+    - little_gal_removehelmet_right_019
+    - little_gal_removehelmet_right_023
+    - little_gal_removehelmet_right_026
+    - little_gal_removehelmet_right_027
+    - little_gal_removehelmet_right_020
+    - little_gal_removehelmet_right_021
+    - little_gal_removehelmet_right_022
+    - little_gal_idle2_right_006
+    - little_gal_idle2_left_004
+    - little_gal_idle2_left_005
+    - little_gal_idle2_left_006
+    - little_gal_idle2_right_002
+    - little_gal_idle2_right_008
+    - little_gal_idle2_left_008
+    - little_gal_idle2_right_007
+    - little_gal_idle2_right_001
+    - little_gal_idle2_left_003
+    - little_gal_idle2_right_003
+    - little_gal_idle2_left_007
+    - little_gal_idle2_right_005
+    - little_gal_idle2_right_004
+    - little_gal_idle2_left_002
+    - little_gal_idle2_left_001
+    spriteTextureGUIDs:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    spriteTextureTimeStamps:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3

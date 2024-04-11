@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 1025005896
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bad61cd2837c238e1a26d5f43f510beb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e7985f7a1231576cc08010430e9b2cd0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a5e54113e5604435b8ae87c7754f2725, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ecaffc43a5d2b1d47858e3fb687e7271, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 84c7a4b4ee15890498f818262bca0312, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LittleGal.prefab
+- Assets/little_guy_and_gal_bosscard_001.png
+- Assets/LittleGuyAnimation.prefab
+- Assets/MiscArt/guy.png
+- Assets/LittleGuy.prefab
+- Assets/MiscArt/the_duo.png
+- Assets/MiscArt/gal.png
+- Assets/little_guy_bosscard_001.png
+- Assets/LittleGuyCollection.prefab
+- Assets/StrangeRoot.prefab
+Dependencies: []
