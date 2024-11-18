@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace LittleGuy
 {
-    [BepInPlugin(GUID, "Little Guy", "1.0.0")]
+    [BepInPlugin(GUID, "Little Guy", "1.3.1")]
     public class Plugin : BaseUnityPlugin
     {
         public const string GUID = "spapi.etg.littleguy";
@@ -29,8 +29,10 @@ namespace LittleGuy
             {
                 bundle = AssetBundle.LoadFromStream(strem);
             }
+
             lilguybosscard = bundle.LoadAsset<Texture2D>("little_guy_bosscard_001");
             lilguybosscard2 = bundle.LoadAsset<Texture2D>("little_guy_and_gal_bosscard_001");
+
             ETGModMainBehaviour.WaitForGameManagerStart(GMStart);
             new Harmony(GUID).PatchAll();
         }
@@ -47,88 +49,88 @@ namespace LittleGuy
 
             GameManager.Instance.SynergyManager.synergies = GameManager.Instance.SynergyManager.synergies.AddRangeToArray(new AdvancedSynergyEntry[]
             {
-                new AdvancedSynergyEntry()
+                new()
                 {
                     NameKey = "#LG_HEAVYWEIGHT",
-                    MandatoryItemIDs = new List<int>()
+                    MandatoryItemIDs = new()
                     {
                         StrangeRoot.rootid
                     },
-                    OptionalItemIDs = new List<int>()
+                    OptionalItemIDs = new()
                     {
                         133
                     },
-                    OptionalGunIDs = new List<int>()
+                    OptionalGunIDs = new()
                     {
                         539
                     },
-                    bonusSynergies = new List<CustomSynergyType>()
+                    bonusSynergies = new()
                     {
                         (heavyweightSynergy = ETGModCompatibility.ExtendEnum<CustomSynergyType>(GUID, "HEAVYWEIGHT"))
                     },
-                    statModifiers = new List<StatModifier>()
+                    statModifiers = []
                 },
-                new AdvancedSynergyEntry()
+                new()
                 {
                     NameKey = "#LG_RARELOOT",
-                    MandatoryItemIDs = new List<int>()
+                    MandatoryItemIDs = new()
                     {
                         StrangeRoot.rootid
                     },
-                    OptionalItemIDs = new List<int>()
+                    OptionalItemIDs = new()
                     {
                         605,
                         289
                     },
-                    bonusSynergies = new List<CustomSynergyType>()
+                    bonusSynergies = new()
                     {
                         (rareLootSynergy = ETGModCompatibility.ExtendEnum<CustomSynergyType>(GUID, "RARE_LOOT"))
                     },
-                    statModifiers = new List<StatModifier>()
+                    statModifiers = []
                 },
-                new AdvancedSynergyEntry()
+                new()
                 {
                     NameKey = "#LG_NOTENOUGHSPACE",
-                    MandatoryItemIDs = new List<int>()
+                    MandatoryItemIDs = new()
                     {
                         StrangeRoot.rootid
                     },
-                    OptionalItemIDs = new List<int>()
+                    OptionalItemIDs = new()
                     {
                         155
                     },
-                    OptionalGunIDs = new List<int>()
+                    OptionalGunIDs = new()
                     {
                         169
                     },
-                    bonusSynergies = new List<CustomSynergyType>()
+                    bonusSynergies = new()
                     {
                         (notEnoughSynergy = ETGModCompatibility.ExtendEnum<CustomSynergyType>(GUID, "NOT_ENOUGH_SPACE"))
                     },
-                    statModifiers = new List<StatModifier>()
+                    statModifiers = new()
                     {
                         StatModifier.Create(PlayerStats.StatType.AdditionalItemCapacity, StatModifier.ModifyMethod.ADDITIVE, 2)
                     }
                 },
-                new AdvancedSynergyEntry()
+                new()
                 {
                     NameKey = "#LG_WHOLEZOO",
-                    MandatoryItemIDs = new List<int>()
+                    MandatoryItemIDs = new()
                     {
                         StrangeRoot.rootid
                     },
-                    OptionalGunIDs = new List<int>()
+                    OptionalGunIDs = new()
                     {
                         369,
                         176,
                         599,
                         406
                     },
-                    bonusSynergies = new List<CustomSynergyType>()
+                    bonusSynergies = new()
                     {
                         (wholeZooSynergy = ETGModCompatibility.ExtendEnum<CustomSynergyType>(GUID, "WHOLE_ZOO"))
                     },
-                    statModifiers = new List<StatModifier>()
+                    statModifiers = new()
                     {
                         StatModifier.Create(PlayerStats.StatType.Damage, StatModifier.ModifyMethod.MULTIPLICATIVE, 0.75f),
                         StatModifier.Create(PlayerStats.StatType.Accuracy, StatModifier.ModifyMethod.MULTIPLICATIVE, 1.1f)
@@ -152,9 +154,7 @@ namespace LittleGuy
             var txt = "Little Guy has successfully infiltrated the game.";
 
             if (littleGalSeen)
-            {
                 txt = "Little Guy (and Little Gal) have successfully infiltrated the game.";
-            }
 
             var groupHeight = 48;
             var group = new SGroup() { Size = new Vector2(20000, groupHeight), AutoLayoutPadding = 0, Background = Color.clear, AutoLayout = x => x.AutoLayoutHorizontal };
@@ -164,9 +164,7 @@ namespace LittleGuy
             var color2 = new Color32(177, 202, 19, 255);
             
             if(littleGalSeen)
-            {
                 color2 = new Color32(0, 140, 198, 255);
-            }
 
             var grad = new Gradient()
             {
@@ -184,13 +182,10 @@ namespace LittleGuy
                 var color = grad.Evaluate((float)i / (txt.Length - 1) / 2f);
 
                 if (c == ' ')
-                {
                     group.Children.Add(new SRect(Color.clear) { Size = Vector2.one * 10 });
-                }
+
                 else
-                {
                     group.Children.Add(new SLabel(c.ToString()) { Foreground = color, With = { new GradientThingy(grad, (float)i / (txt.Length - 1) / 2f) } });
-                }
             }
 
             group.Children.Add(new SRect(Color.clear) { Size = Vector2.one * 10 });

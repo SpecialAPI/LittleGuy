@@ -11,26 +11,24 @@ namespace LittleGuy
         public void Start()
         {
             ai = aiActor;
-            if(ai != null)
-            {
-                p = ai.CompanionOwner;
-                origcontact = ai.CollisionDamage;
-            }
+
+            if (ai == null)
+                return;
+
+            p = ai.CompanionOwner;
+            origcontact = ai.CollisionDamage;
         }
 
         public void Update()
         {
-            if(ai != null)
-            {
-                if (p != null && p.HasActiveBonusSynergy(Plugin.heavyweightSynergy))
-                {
-                    ai.CollisionDamage = origcontact * 2f;
-                }
-                else
-                {
-                    ai.CollisionDamage = origcontact;
-                }
-            }
+            if (ai == null)
+                return;
+
+            if (p != null && p.HasActiveBonusSynergy(Plugin.heavyweightSynergy))
+                ai.CollisionDamage = origcontact * 2f;
+
+            else
+                ai.CollisionDamage = origcontact;
         }
 
         public AIActor ai;

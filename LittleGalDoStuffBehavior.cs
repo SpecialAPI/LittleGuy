@@ -23,14 +23,11 @@ namespace LittleGuy
 			var playingIdle = IsPlayingIdle();
 
             if (m_aiAnimator.IsPlaying("pet_end"))
-            {
                 m_aiActor.ClearPath();
-            }
 
             if (m_aiAnimator.IsPlaying("removehelmet"))
-            {
                 m_aiActor.ClearPath();
-            }
+
             else if (playingIdle && !m_aiActor.CompanionOwner.IsInCombat)
             {
                 if (!hadPlayedAnimThisIdle)
@@ -56,9 +53,8 @@ namespace LittleGuy
             else
             {
                 if (wasPlayingIdle)
-                {
                     m_aiAnimator.OverrideIdleAnimation = BraveUtility.RandomBool() ? "idle2" : null;
-                }
+
                 wasPlayingIdle = false;
             }
 

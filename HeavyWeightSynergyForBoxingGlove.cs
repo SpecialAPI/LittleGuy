@@ -9,10 +9,10 @@ namespace LittleGuy
     {
         public override void PostProcessProjectile(Projectile projectile)
         {
-            if(PlayerOwner != null && PlayerOwner.HasActiveBonusSynergy(Plugin.heavyweightSynergy))
-            {
-                projectile.baseData.damage *= 1.5f;
-            }
+            if (PlayerOwner == null || !PlayerOwner.HasActiveBonusSynergy(Plugin.heavyweightSynergy))
+                return;
+
+            projectile.baseData.damage *= 1.5f;
         }
     }
 }

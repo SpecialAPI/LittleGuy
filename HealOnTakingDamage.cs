@@ -10,13 +10,13 @@ namespace LittleGuy
     {
         public void Start()
         {
-            if(healthHaver != null)
-            {
-                healthHaver.OnDamaged += HandleDamaged;
-            }
+            if (healthHaver == null)
+                return;
+
+            healthHaver.OnDamaged += HandleDamaged;
         }
 
-		public void HandleDamaged(float resultValue, float maxValue, CoreDamageTypes damageTypes, DamageCategory damageCategory, Vector2 damageDirection)
+        public void HandleDamaged(float resultValue, float maxValue, CoreDamageTypes damageTypes, DamageCategory damageCategory, Vector2 damageDirection)
 		{
 			healthHaver.FullHeal();
 		}
